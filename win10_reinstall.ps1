@@ -14,6 +14,8 @@ Write-Host "Done"
 
 Write-Host "Installing Edge (Chromium)"
 choco install microsoft-edge-insider-dev -y
+del "C:\Users\$CurrentUserName\Desktop\Microsoft Edge.lnk"
+del "C:\Users\Public\Desktop\Microsoft Edge Dev.lnk"
 Write-Host "Done"
 
 Write-Host "Installing WinRAR"
@@ -22,7 +24,7 @@ Write-Host "Done"
 
 Write-Host "Installing WinSCP"
 choco install winscp.install -y
-del C:\Users\Public\Desktop\WinSCP.lnk
+del "C:\Users\Public\Desktop\WinSCP.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Notepad++"
@@ -42,22 +44,22 @@ Write-Host "Done"
 
 Write-Host "Installing WhatsApp"
 choco install WhatsApp -y
+del "C:\Users\$CurrentUserName\Desktop\WhatsApp.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Discord"
 choco install discord.install -y
+del "C:\Users\$CurrentUserName\Desktop\Discord.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Epic Games Launcher"
 choco install epicgameslauncher -y
+del "C:\Users\Public\Desktop\Epic Games Launcher.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Steam"
 choco install steam -y
-Write-Host "Done"
-
-Write-Host "Installing Megasync"
-choco install megasync -y
+del "C:\Users\Public\Desktop\Steam.lnk"
 Write-Host "Done"
 
 	

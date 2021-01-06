@@ -10,6 +10,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 Write-Host "Installing Chocolatey GUI"
 choco install ChocolateyGUI -y
+choco feature enable --name=allowGlobalConfirmation
 Write-Host "Done"
 
 Write-Host "Installing Edge (Chromium)"
@@ -67,7 +68,7 @@ choco install spotify -y --ignore-checksums
 del "C:\Users\$CurrentUserName\Desktop\Spotify.lnk"
 Write-Host "Done"
 
-Write-Host "Installing Film Info!"
+Write-Host "Installing Film Info! Organiser"
 Start-BitsTransfer -Source "https://github.com/RalfEs73/filminfoorganizer_choco/raw/master/filminfo.0.6.1.3.nupkg" -Destination filminfo.0.6.1.3.nupkg
 choco install filminfo -s .
 del "C:\Users\Public\Desktop\Film Info! Organizer.lnk"
@@ -81,8 +82,6 @@ Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/filminfoo
 Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/filminfoorganizer_choco/master/settings/tmdb_config.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\tmdb_config.xml"
 del filminfo.0.6.1.3.nupkg
 Write-Host "Done"
-
-
 
 	
 $Bloatware = @(

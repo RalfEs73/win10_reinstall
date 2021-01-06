@@ -21,15 +21,25 @@
 
 
 # Windows 10 Installation
-
-## Info
 Dieses Script installiert die von mir gewünschten Anwendungen auf einen Windows 10 PC.
 
 ## Die folgenden Anwendungen werden installiert:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
+* Chocolatey
+* Edge (Chromium) Dev Channel
+* WinRAR
+* WinSCP
+* Notepad++
+* GitHub Desktop
+* Telegram
+* WhatsApp
+* Discord
+* Epic Games Launcher
+* Steam
+* Spotify
+* Film Info! Organiser
 
+## Die folgenden Anwendungen werden deinstalliert:
+* CandyCrush App
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

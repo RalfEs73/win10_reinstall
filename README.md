@@ -1,5 +1,8 @@
-# Windows 10 Neuinstallation
+<!-- PROJECT SHIELDS -->
 [![LinkedIn][linkedin-shield]][linkedin-url]
+
+
+# Windows 10 Neuinstallation
 
 Aufruf mit:
 ```sh
@@ -11,5 +14,6 @@ Die folgenden Anwendungen werden installiert:
 * b
 
 
-
-[linkedin-url]: https://linkedin.com/in/ralfes
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+linkedin-url]: https://linkedin.com/in/ralfes

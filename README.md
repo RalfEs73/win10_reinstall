@@ -36,6 +36,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 * WinSCP
 * Notepad++
 * VLC
+* Plex
 * AnyDVD
 * HandBrake
 * GitHub Desktop
@@ -45,6 +46,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 * Epic Games Launcher
 * Steam
 * Spotify
+* Driver Booster
 * Film Info! Organiser
 
 ## Die folgenden Anwendungen werden deinstalliert:

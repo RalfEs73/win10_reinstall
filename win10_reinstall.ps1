@@ -37,6 +37,10 @@ choco install vlc -y
 del "C:\Users\Public\Desktop\VLC media player.lnk"
 Write-Host "Done"
 
+Write-Host "Installing Plex"
+choco install plex -y
+Write-Host "Done"
+
 Write-Host "Installing AnyDVD"
 choco install anydvd -y
 del "C:\Users\Public\Desktop\AnyDVD.lnk"
@@ -82,6 +86,13 @@ Write-Host "Installing Spotify"
 choco install spotify -y --ignore-checksums
 del "C:\Users\$CurrentUserName\Desktop\Spotify.lnk"
 Write-Host "Done"
+
+Write-Host "Installing Driver Booster"
+choco install driverbooster -y --ignore-checksums
+del "C:\Users\Public\Desktop\Driver Booster 8.lnk"
+Stop-Process -Name Driver*
+Write-Host "Done"
+
 
 Write-Host "Installing Film Info! Organiser"
 Start-BitsTransfer -Source "https://github.com/RalfEs73/filminfoorganizer_choco/raw/master/filminfo.0.6.1.3.nupkg" -Destination filminfo.0.6.1.3.nupkg

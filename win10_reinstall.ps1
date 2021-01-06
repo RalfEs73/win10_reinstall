@@ -27,7 +27,7 @@ Write-Host "Done"
 
 Write-Host "Installing GitHub Desktop"
 choco install github-desktop -y
-del C:\Users\WDAGUtilityAccount\Desktop\GitHub Desktop.lnk
+del "C:\Users\WDAGUtilityAccount\Desktop\GitHub Desktop.lnk"
 Stop-Process -Name GitHubDesktop
 Write-Host "Done"
 

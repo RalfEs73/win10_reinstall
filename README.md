@@ -52,6 +52,9 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 ## Die folgenden Anwendungen werden deinstalliert:
 * CandyCrush App
 
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=repat&url=https://github.com/repat/README-template&title=README-template&language=&tags=github&category=software) 
+
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555

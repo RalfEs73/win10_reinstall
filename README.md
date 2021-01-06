@@ -22,6 +22,8 @@
 
 # Windows 10 ReInstallation
 Dieses Script installiert die von mir gewünschten Anwendungen auf einem Windows 10 PC.
+[![Youtube](https://img.youtube.com/vi/C0V2HVFRi_Y/0.jpg)](https://www.youtube.com/watch?v=C0V2HVFRi_Y)
+
 
 ## Aufruf
 Mit PowerShell (und Adminrechten) den folgenden Befehl starten:

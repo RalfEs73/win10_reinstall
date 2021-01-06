@@ -1,3 +1,8 @@
+# iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/RalfEs73/win10_reinstall/master/win10_reinstall.ps1'))
+
+$CurrentUser = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
+$CurrentUserName = $CurrentUser.split("\")[1]
+
 Write-Host "Installing Chocolatey"
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 	choco install chocolatey-core.extension -y
@@ -13,10 +18,17 @@ Write-Host "Done"
 
 Write-Host "Installing WinSCP"
 choco install winscp.install -y
+del C:\Users\Public\Desktop\WinSCP.lnk
 Write-Host "Done"
 
 Write-Host "Installing Notepad++"
 choco install notepadplusplus.install -y
+Write-Host "Done"
+
+Write-Host "Installing GitHub Desktop"
+choco install github-desktop -y
+del C:\Users\WDAGUtilityAccount\Desktop\GitHub Desktop.lnk
+Stop-Process -Name GitHubDesktop
 Write-Host "Done"
 
 	

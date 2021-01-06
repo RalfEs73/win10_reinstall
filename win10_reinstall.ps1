@@ -33,7 +33,6 @@ Write-Host "Done"
 
 	
 $Bloatware = @(
-
         #"Microsoft.3DBuilder"
         #"Microsoft.Microsoft3DViewer"
         #"Microsoft.MicrosoftSolitaireCollection"

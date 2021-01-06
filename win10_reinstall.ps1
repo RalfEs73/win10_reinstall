@@ -31,6 +31,11 @@ del "C:\Users\$CurrentUserName\Desktop\GitHub Desktop.lnk"
 Stop-Process -Name GitHubDesktop
 Write-Host "Done"
 
+Write-Host "Installing Telegram"
+choco install telegram.install -y
+Write-Host "Done"
+
+
 	
 $Bloatware = @(
         #"Microsoft.3DBuilder"

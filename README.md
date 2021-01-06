@@ -20,11 +20,7 @@
 
 
 
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <h3 align="center">Windows 10 Installation</h3>
-</p>
+### Windows 10 Installation
 
 <!-- ABOUT THE PROJECT -->
 ## Die folgenden Anwendungen werden installiert:

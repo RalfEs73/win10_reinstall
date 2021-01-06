@@ -20,7 +20,7 @@
 
 
 
-# Windows 10 ReInstallation
+# Windows 10 (Re-)Installation Script
 Dieses Script installiert die von mir gewünschten Anwendungen auf einem Windows 10 PC.
 
 [![Youtube](https://img.youtube.com/vi/qpW2zixWoRk/0.jpg)](https://www.youtube.com/watch?v=qpW2zixWoRk)

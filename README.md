@@ -35,6 +35,9 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 * WinRAR
 * WinSCP
 * Notepad++
+* VLC
+* AnyDVD
+* HandBrake
 * GitHub Desktop
 * Telegram
 * WhatsApp

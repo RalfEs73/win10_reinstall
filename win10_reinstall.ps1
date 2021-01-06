@@ -34,6 +34,17 @@ Write-Host "Done"
 
 Write-Host "Installing VLC"
 choco install vlc -y
+del "C:\Users\Public\Desktop\VLC media player.lnk"
+Write-Host "Done"
+
+Write-Host "Installing AnyDVD"
+choco install anydvd -y
+del "C:\Users\Public\Desktop\AnyDVD.lnk"
+Write-Host "Done"
+
+Write-Host "Installing HandBrake"
+choco install handbrake.install -y
+del "C:\Users\Public\Desktop\Handbrake.lnk"
 Write-Host "Done"
 
 Write-Host "Installing GitHub Desktop"

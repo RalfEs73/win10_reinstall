@@ -32,6 +32,10 @@ Write-Host "Installing Notepad++"
 choco install notepadplusplus.install -y
 Write-Host "Done"
 
+Write-Host "Installing Image Resizer for Windows"
+choco install imageresizerapp -y
+Write-Host "Done"
+
 Write-Host "Installing VLC"
 choco install vlc -y
 del "C:\Users\Public\Desktop\VLC media player.lnk"

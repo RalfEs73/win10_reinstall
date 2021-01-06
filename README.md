@@ -38,6 +38,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 * WinRAR
 * WinSCP
 * Notepad++
+* Image Resizer for Windows
 * VLC
 * Plex
 * AnyDVD

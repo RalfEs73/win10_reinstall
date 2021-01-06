@@ -62,6 +62,28 @@ choco install steam -y
 del "C:\Users\Public\Desktop\Steam.lnk"
 Write-Host "Done"
 
+Write-Host "Installing Spotify"
+choco install spotify -y --ignore-checksums
+del "C:\Users\$CurrentUserName\Desktop\Spotify.lnk"
+Write-Host "Done"
+
+Write-Host "Installing Film Info!"
+Start-BitsTransfer -Source "https://github.com/RalfEs73/filminfoorganizer_choco/raw/master/filminfo.0.6.1.3.nupkg" -Destination filminfo.0.6.1.3.nupkg
+choco install filminfo -s .
+del "C:\Users\Public\Desktop\Film Info! Organizer.lnk"
+mkdir "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer"
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/filminfoorganizer_choco/master/settings/Columns.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Columns.xml"
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/filminfoorganizer_choco/master/settings/Config.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Config.xml"
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/filminfoorganizer_choco/master/settings/Favoriten.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Favoriten.xml"
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/filminfoorganizer_choco/master/settings/Filter.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Filter.xml"
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/filminfoorganizer_choco/master/settings/Genre.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Genre.xml"
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/filminfoorganizer_choco/master/settings/Interface.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Interface.xml"
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/filminfoorganizer_choco/master/settings/tmdb_config.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\tmdb_config.xml"
+del filminfo.0.6.1.3.nupkg
+Write-Host "Done"
+
+
+
 	
 $Bloatware = @(
         #"Microsoft.3DBuilder"

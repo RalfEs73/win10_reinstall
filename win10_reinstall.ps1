@@ -12,6 +12,10 @@ Write-Host "Installing Chocolatey GUI"
 choco install ChocolateyGUI -y
 Write-Host "Done"
 
+Write-Host "Installing Edge (Chromium)"
+choco install microsoft-edge-insider-dev -y
+Write-Host "Done"
+
 Write-Host "Installing WinRAR"
 choco install winrar -y
 Write-Host "Done"
@@ -33,8 +37,28 @@ Write-Host "Done"
 
 Write-Host "Installing Telegram"
 choco install telegram.install -y
+del "C:\Users\$CurrentUserName\Desktop\Telegram.lnk"
 Write-Host "Done"
 
+Write-Host "Installing WhatsApp"
+choco install WhatsApp -y
+Write-Host "Done"
+
+Write-Host "Installing Discord"
+choco install discord.install -y
+Write-Host "Done"
+
+Write-Host "Installing Epic Games Launcher"
+choco install epicgameslauncher -y
+Write-Host "Done"
+
+Write-Host "Installing Steam"
+choco install steam -y
+Write-Host "Done"
+
+Write-Host "Installing Megasync"
+choco install megasync -y
+Write-Host "Done"
 
 	
 $Bloatware = @(

@@ -20,8 +20,8 @@
 
 
 
-# Windows 10 Installation
-Dieses Script installiert die von mir gewünschten Anwendungen auf einen Windows 10 PC.
+# Windows 10 ReInstallation
+Dieses Script installiert die von mir gewünschten Anwendungen auf einem Windows 10 PC.
 
 ## Aufruf
 Mit PowerShell (und Adminrechten) den folgenden Befehl starten:

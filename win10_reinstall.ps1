@@ -32,6 +32,10 @@ Write-Host "Installing Notepad++"
 choco install notepadplusplus.install -y
 Write-Host "Done"
 
+Write-Host "Installing VLC"
+choco install vlc -y
+Write-Host "Done"
+
 Write-Host "Installing GitHub Desktop"
 choco install github-desktop -y
 del "C:\Users\$CurrentUserName\Desktop\GitHub Desktop.lnk"

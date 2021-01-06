@@ -23,6 +23,12 @@
 # Windows 10 Installation
 Dieses Script installiert die von mir gewünschten Anwendungen auf einen Windows 10 PC.
 
+## Aufruf
+Mit PowerShell (und Adminrechten) den folgenden Befehl starten:
+```sh
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/RalfEs73/win10_reinstall/master/win10_reinstall.ps1'))
+```
+
 ## Die folgenden Anwendungen werden installiert:
 * Chocolatey
 * Edge (Chromium) Dev Channel

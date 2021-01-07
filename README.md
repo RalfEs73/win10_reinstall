@@ -36,7 +36,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 
 ## Die folgenden Anwendungen werden installiert:
 * Chocolatey
-* Edge (Chromium) Dev Channel
+* Edge (Chromium)
 * WinRAR
 * WinSCP
 * Notepad++

@@ -38,6 +38,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 * WinRAR
 * WinSCP
 * Notepad++
+* 4K Video Downloader
 * Image Resizer for Windows
 * VLC
 * Plex
@@ -51,6 +52,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 * Steam
 * Spotify
 * Driver Booster
+* Movavi Video Editor Plus
 * Film Info! Organiser
 
 ## Die folgenden Anwendungen werden deinstalliert:

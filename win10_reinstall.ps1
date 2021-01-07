@@ -32,6 +32,11 @@ Write-Host "Installing Notepad++"
 choco install notepadplusplus.install -y
 Write-Host "Done"
 
+Write-Host "Installing 4K Video Downloader"
+choco install 4k-video-downloader -y
+del "C:\Users\Public\Desktop\4K Video Downloader.lnk"
+Write-Host "Done"
+
 Write-Host "Installing Image Resizer for Windows"
 choco install imageresizerapp -y
 Write-Host "Done"
@@ -96,6 +101,15 @@ choco install driverbooster -y --ignore-checksums
 del "C:\Users\Public\Desktop\Driver Booster 8.lnk"
 Stop-Process -Name Driver*
 Write-Host "Done"
+
+Write-Host "Installing Movavi Video Editor Plus"
+Start-BitsTransfer -Source "https://github.com/RalfEs73/movavivideoeditorplus_choco/raw/master/movavivideoeditorplus.21.1.0.nupkg" -Destination movavivideoeditorplus.21.1.0.nupkg
+choco install movavivideoeditorplus -s .
+del "C:\Users\$CurrentUserName\Desktop\Movavi Video Editor Plus 2021.lnk"
+del movavivideoeditorplus.21.1.0.nupkg
+Write-Host "Done"
+
+
 
 
 Write-Host "Installing Film Info! Organiser"

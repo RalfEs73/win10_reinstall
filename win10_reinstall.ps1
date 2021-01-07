@@ -109,9 +109,6 @@ del "C:\Users\$CurrentUserName\Desktop\Movavi Video Editor Plus 2021.lnk"
 del movavivideoeditorplus.21.1.0.nupkg
 Write-Host "Done"
 
-
-
-
 Write-Host "Installing Film Info! Organiser"
 Start-BitsTransfer -Source "https://github.com/RalfEs73/filminfoorganizer_choco/raw/master/filminfo.0.6.1.3.nupkg" -Destination filminfo.0.6.1.3.nupkg
 choco install filminfo -s .

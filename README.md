@@ -17,6 +17,7 @@
 -->
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
+
 [![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=ralfes&url=https://github.com/ralfes/Windows10Install&title=Windows10Install&language=&tags=github&category=software) 
 
 

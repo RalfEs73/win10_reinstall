@@ -15,7 +15,7 @@ Write-Host "Done"
 
 Write-Host "Installing Edge (Chromium)"
 choco install microsoft-edge -y
-DeleteFile "C:\Users\Public\Desktop\Microsoft Edge.lnk"
+del "C:\Users\Public\Desktop\Microsoft Edge.lnk"
 Write-Host "Done"
 
 Write-Host "Installing WinRAR"
@@ -24,7 +24,7 @@ Write-Host "Done"
 
 Write-Host "Installing WinSCP"
 choco install winscp.install -y
-DeleteFile "C:\Users\Public\Desktop\WinSCP.lnk"
+del "C:\Users\Public\Desktop\WinSCP.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Notepad++"
@@ -33,7 +33,7 @@ Write-Host "Done"
 
 Write-Host "Installing 4K Video Downloader"
 choco install 4k-video-downloader -y
-DeleteFile "C:\Users\Public\Desktop\4K Video Downloader.lnk"
+del "C:\Users\Public\Desktop\4K Video Downloader.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Image Resizer for Windows"
@@ -42,7 +42,7 @@ Write-Host "Done"
 
 Write-Host "Installing VLC"
 choco install vlc -y
-DeleteFile "C:\Users\Public\Desktop\VLC media player.lnk"
+del "C:\Users\Public\Desktop\VLC media player.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Plex"
@@ -51,67 +51,67 @@ Write-Host "Done"
 
 Write-Host "Installing AnyDVD"
 choco install anydvd -y
-DeleteFile "C:\Users\Public\Desktop\AnyDVD.lnk"
+del "C:\Users\Public\Desktop\AnyDVD.lnk"
 Write-Host "Done"
 
 Write-Host "Installing HandBrake"
 choco install handbrake.install -y
-DeleteFile "C:\Users\Public\Desktop\Handbrake.lnk"
+del "C:\Users\Public\Desktop\Handbrake.lnk"
 Write-Host "Done"
 
 Write-Host "Installing GitHub Desktop"
 choco install github-desktop -y
-DeleteFile "C:\Users\$CurrentUserName\Desktop\GitHub Desktop.lnk"
+del "C:\Users\$CurrentUserName\Desktop\GitHub Desktop.lnk"
 Stop-Process -Name GitHubDesktop
 Write-Host "Done"
 
 Write-Host "Installing Telegram"
 choco install telegram.install -y
-DeleteFile "C:\Users\$CurrentUserName\Desktop\Telegram.lnk"
+del "C:\Users\$CurrentUserName\Desktop\Telegram.lnk"
 Write-Host "Done"
 
 Write-Host "Installing WhatsApp"
 choco install WhatsApp -y
-DeleteFile "C:\Users\$CurrentUserName\Desktop\WhatsApp.lnk"
+del "C:\Users\$CurrentUserName\Desktop\WhatsApp.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Discord"
 choco install discord.install -y
-DeleteFile "C:\Users\$CurrentUserName\Desktop\Discord.lnk"
+del "C:\Users\$CurrentUserName\Desktop\Discord.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Epic Games Launcher"
 choco install epicgameslauncher -y
-DeleteFile "C:\Users\Public\Desktop\Epic Games Launcher.lnk"
+del "C:\Users\Public\Desktop\Epic Games Launcher.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Steam"
 choco install steam -y
-DeleteFile "C:\Users\Public\Desktop\Steam.lnk"
+del "C:\Users\Public\Desktop\Steam.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Spotify"
 choco install spotify -y --ignore-checksums
-DeleteFile "C:\Users\$CurrentUserName\Desktop\Spotify.lnk"
+del "C:\Users\$CurrentUserName\Desktop\Spotify.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Driver Booster"
 choco install driverbooster -y --ignore-checksums
-DeleteFile "C:\Users\Public\Desktop\Driver Booster 8.lnk"
+del "C:\Users\Public\Desktop\Driver Booster 8.lnk"
 Stop-Process -Name Driver*
 Write-Host "Done"
 
 Write-Host "Installing Movavi Video Editor Plus"
 Start-BitsTransfer -Source "https://github.com/RalfEs73/movavivideoeditorplus_choco/raw/master/movavivideoeditorplus.21.1.0.nupkg" -Destination movavivideoeditorplus.21.1.0.nupkg
 choco install movavivideoeditorplus -s .
-DeleteFile "C:\Users\$CurrentUserName\Desktop\Movavi Video Editor Plus 2021.lnk"
-DeleteFile movavivideoeditorplus.21.1.0.nupkg
+del "C:\Users\$CurrentUserName\Desktop\Movavi Video Editor Plus 2021.lnk"
+del movavivideoeditorplus.21.1.0.nupkg
 Write-Host "Done"
 
 Write-Host "Installing Film Info! Organiser"
 Start-BitsTransfer -Source "https://github.com/RalfEs73/filminfoorganizer_choco/raw/master/filminfo.0.6.1.3.nupkg" -Destination filminfo.0.6.1.3.nupkg
 choco install filminfo -s .
-DeleteFile "C:\Users\Public\Desktop\Film Info! Organizer.lnk"
+del "C:\Users\Public\Desktop\Film Info! Organizer.lnk"
 mkdir "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer"
 Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/filminfoorganizer_choco/master/settings/Columns.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Columns.xml"
 Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/filminfoorganizer_choco/master/settings/Config.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Config.xml"
@@ -120,7 +120,7 @@ Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/filminfoo
 Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/filminfoorganizer_choco/master/settings/Genre.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Genre.xml"
 Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/filminfoorganizer_choco/master/settings/Interface.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Interface.xml"
 Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/filminfoorganizer_choco/master/settings/tmdb_config.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\tmdb_config.xml"
-DeleteFile filminfo.0.6.1.3.nupkg
+del filminfo.0.6.1.3.nupkg
 Write-Host "Done"
 
 
@@ -141,10 +141,3 @@ $Bloatware = @(
         Get-AppxProvisionedPackage -Online | Where-Object DisplayName -like $Bloat | Remove-AppxProvisionedPackage -Online
         Write-Host "Deinstalliere: $Bloat."
     }
-
-function DeleteFile($FileName){
-	if (Test-Path $FileName) 
-		{
-		  del $FileName
-		}
-}

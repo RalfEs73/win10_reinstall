@@ -38,6 +38,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 * Chocolatey
 * Edge (Chromium)
 * WinRAR
+* GeForce Experience
 * WinSCP
 * Notepad++
 * 4K Video Downloader

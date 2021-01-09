@@ -138,7 +138,7 @@ Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/filminfoo
 del filminfo.0.6.1.3.nupkg
 Write-Host "Done"
 
-
+Write-Host "Deinstalliere Bloatware"
 $Bloatware = @(
         #"Microsoft.3DBuilder"
         #"Microsoft.Microsoft3DViewer"
@@ -155,4 +155,17 @@ $Bloatware = @(
         Get-AppxPackage -Name $Bloat| Remove-AppxPackage
         Get-AppxProvisionedPackage -Online | Where-Object DisplayName -like $Bloat | Remove-AppxProvisionedPackage -Online
         Write-Host "Deinstalliere: $Bloat."
+    }
+
+$Logfiles = @(
+    "C:\ProgramData\chocolatey\logs\chocolatey.log"
+    "C:\ProgramData\chocolatey\logs\choco.summary.log"
+    )
+
+Write-Host "Lösche Logfiles"
+foreach ($Log in $Logfiles) {
+    If (Test-Path $Log) {
+        Write-Host "Lösche: $Log"
+        Remove-Item $Log
+        }
     }

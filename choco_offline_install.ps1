@@ -13,8 +13,8 @@ Write-Host "Done"
 
 
 #Sample
-Write-Host "Installing Movavi Video Editor Plus"
-Start-BitsTransfer -Source "https://github.com/RalfEs73/movavivideoeditorplus_choco/raw/master/movavivideoeditorplus.21.1.0.nupkg" -Destination movavivideoeditorplus.21.1.0.nupkg
-choco install movavivideoeditorplus -s .
-del movavivideoeditorplus.21.1.0.nupkg
+Write-Host "Installing filminfo.0.6.1.3.nupkg"
+Start-BitsTransfer -Source "https://github.com/RalfEs73/chocolatey-packages/raw/master/filminfo/filminfo.0.6.1.3.nupkg" -Destination filminfo.0.6.1.3.nupkg
+choco install filminfo -s .
+del filminfo.0.6.1.3.nupkg
 Write-Host "Done"

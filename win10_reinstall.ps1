@@ -5,12 +5,12 @@ $CurrentUserName = $CurrentUser.split("\")[1]
 
 Write-Host "Installing Chocolatey"
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-	choco install chocolatey-core.extension -y
-	Write-Host "Done"
+choco install chocolatey-core.extension -y
+choco feature enable --name=allowGlobalConfirmation
+Write-Host "Done"
 
 Write-Host "Installing Chocolatey GUI"
 choco install ChocolateyGUI -y
-choco feature enable --name=allowGlobalConfirmation
 Write-Host "Done"
 
 Write-Host "Installing Edge (Chromium)"
@@ -117,24 +117,24 @@ Stop-Process -Name Driver*
 Write-Host "Done"
 
 Write-Host "Installing Movavi Video Editor Plus"
-Start-BitsTransfer -Source "https://github.com/RalfEs73/movavivideoeditorplus_choco/raw/master/movavivideoeditorplus.21.1.0.nupkg" -Destination movavivideoeditorplus.21.1.0.nupkg
+Start-BitsTransfer -Source "https://github.com/RalfEs73/chocolatey-packages/raw/master/movavivideoeditorplus/movavivideoeditorplus.21.1.0.nupkg" -Destination movavivideoeditorplus.21.1.0.nupkg
 choco install movavivideoeditorplus -s .
 del "C:\Users\$CurrentUserName\Desktop\Movavi Video Editor Plus 2021.lnk"
 del movavivideoeditorplus.21.1.0.nupkg
 Write-Host "Done"
 
 Write-Host "Installing Film Info! Organiser"
-Start-BitsTransfer -Source "https://github.com/RalfEs73/filminfoorganizer_choco/raw/master/filminfo.0.6.1.3.nupkg" -Destination filminfo.0.6.1.3.nupkg
+Start-BitsTransfer -Source "https://github.com/RalfEs73/chocolatey-packages/raw/master/filminfo/filminfo.0.6.1.3.nupkg" -Destination filminfo.0.6.1.3.nupkg
 choco install filminfo -s .
 del "C:\Users\Public\Desktop\Film Info! Organizer.lnk"
 mkdir "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer"
-Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/filminfoorganizer_choco/master/settings/Columns.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Columns.xml"
-Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/filminfoorganizer_choco/master/settings/Config.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Config.xml"
-Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/filminfoorganizer_choco/master/settings/Favoriten.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Favoriten.xml"
-Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/filminfoorganizer_choco/master/settings/Filter.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Filter.xml"
-Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/filminfoorganizer_choco/master/settings/Genre.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Genre.xml"
-Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/filminfoorganizer_choco/master/settings/Interface.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Interface.xml"
-Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/filminfoorganizer_choco/master/settings/tmdb_config.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\tmdb_config.xml"
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/filminfo/settings/Columns.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Columns.xml"
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/filminfo/settings/Config.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Config.xml"
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/filminfo/settings/Favoriten.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Favoriten.xml"
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/filminfo/settings/Filter.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Filter.xml"
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/filminfo/settings/Genre.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Genre.xml"
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/filminfo/settings/Interface.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Interface.xml"
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/filminfo/settings/tmdb_config.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\tmdb_config.xml"
 del filminfo.0.6.1.3.nupkg
 Write-Host "Done"
 

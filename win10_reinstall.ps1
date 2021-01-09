@@ -20,6 +20,7 @@ Write-Host "Done"
 
 Write-Host "Installing WinRAR"
 choco install winrar -y
+del "C:\Users\$CurrentUserName\Desktop\PeaZip.lnk"
 Write-Host "Done"
 
 Write-Host "Installing GeForce Experience"

@@ -162,10 +162,10 @@ $Logfiles = @(
     "C:\ProgramData\chocolatey\logs\choco.summary.log"
     )
 
-Write-Host "Lösche Logfiles"
+Write-Host "Del Logfiles"
 foreach ($Log in $Logfiles) {
     If (Test-Path $Log) {
-        Write-Host "Lösche: $Log"
+        Write-Host $Log
         Remove-Item $Log
         }
     }

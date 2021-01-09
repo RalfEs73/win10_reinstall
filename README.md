@@ -53,6 +53,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 * Discord
 * Epic Games Launcher
 * Steam
+* Uplay (Ubisoft Connect)
 * Spotify
 * Driver Booster
 * Movavi Video Editor Plus

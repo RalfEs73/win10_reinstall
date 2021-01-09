@@ -100,6 +100,11 @@ choco install uplay -y --ignore-checksums
 del "C:\Users\$CurrentUserName\Desktop\Ubisoft Connect.lnk"
 Write-Host "Done"
 
+Write-Host "Installing Streamlabs OBS"
+choco install streamlabs-obs -y
+del "C:\Users\Public\Desktop\Streamlabs OBS.lnk"
+Write-Host "Done"
+
 Write-Host "Installing Spotify"
 choco install spotify -y --ignore-checksums
 del "C:\Users\$CurrentUserName\Desktop\Spotify.lnk"

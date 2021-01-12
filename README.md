@@ -46,6 +46,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 * VLC
 * Plex
 * AnyDVD
+* File Converter
 * HandBrake
 * GitHub Desktop
 * Telegram

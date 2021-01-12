@@ -59,6 +59,10 @@ choco install anydvd -y
 del "C:\Users\Public\Desktop\AnyDVD.lnk"
 Write-Host "Done"
 
+Write-Host "Installing File Converter"
+choco install file-converter -y
+Write-Host "Done"
+
 Write-Host "Installing HandBrake"
 choco install handbrake.install -y
 del "C:\Users\Public\Desktop\Handbrake.lnk"

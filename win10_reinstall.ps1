@@ -121,15 +121,14 @@ Stop-Process -Name Driver*
 Write-Host "Done"
 
 Write-Host "Installing Movavi Video Editor Plus"
-Start-BitsTransfer -Source "https://github.com/RalfEs73/chocolatey-packages/raw/master/movavivideoeditorplus/movavivideoeditorplus.21.1.0.nupkg" -Destination movavivideoeditorplus.21.1.0.nupkg
-choco install movavivideoeditorplus -s .
+# Not listed yet
+choco install movavivideoeditorplus --version=21.1.0
 del "C:\Users\$CurrentUserName\Desktop\Movavi Video Editor Plus 2021.lnk"
-del movavivideoeditorplus.21.1.0.nupkg
 Write-Host "Done"
 
 Write-Host "Installing Film Info! Organiser"
-Start-BitsTransfer -Source "https://github.com/RalfEs73/chocolatey-packages/raw/master/filminfo/filminfo.0.6.1.3.nupkg" -Destination filminfo.0.6.1.3.nupkg
-choco install filminfo -s .
+# Not listed yet
+choco install filminfo --version=0.6.1.3
 del "C:\Users\Public\Desktop\Film Info! Organizer.lnk"
 mkdir "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer"
 Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/filminfo/settings/Columns.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Columns.xml"
@@ -139,7 +138,6 @@ Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolate
 Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/filminfo/settings/Genre.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Genre.xml"
 Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/filminfo/settings/Interface.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Interface.xml"
 Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/filminfo/settings/tmdb_config.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\tmdb_config.xml"
-del filminfo.0.6.1.3.nupkg
 Write-Host "Done"
 
 Write-Host "Deinstalliere Bloatware"

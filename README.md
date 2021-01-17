@@ -35,7 +35,8 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 ```
 
 ## Die folgenden Anwendungen werden installiert:
-* Chocolatey
+* Chocolatey Core
+* Chocolatey GUI
 * Edge (Chromium)
 * WinRAR
 * GeForce Experience

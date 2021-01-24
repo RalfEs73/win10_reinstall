@@ -42,6 +42,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 * gsudo
 * Windows Terminal
 * GeForce Experience
+* ModernFlyouts
 * WinSCP
 * Notepad++
 * 4K Video Downloader

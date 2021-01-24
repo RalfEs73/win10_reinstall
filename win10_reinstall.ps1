@@ -37,6 +37,10 @@ Write-Host "Installing GeForce Experience"
 choco install geforce-experience -y
 Write-Host "Done"
 
+Write-Host "Installing ModernFlyouts"
+choco install modernflyouts -y
+Write-Host "Done"
+
 Write-Host "Installing WinSCP"
 choco install winscp.install -y
 del "C:\Users\Public\Desktop\WinSCP.lnk"

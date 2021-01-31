@@ -26,6 +26,10 @@ choco install winrar -y $cache
 del "C:\Users\$CurrentUserName\Desktop\PeaZip.lnk"
 Write-Host "Done"
 
+Write-Host "Installing BurntToast"
+choco install burnttoast-psmodule -y $cache
+Write-Host "Done"
+
 Write-Host "Installing gsudo"
 choco install gsudo -y $cache
 Write-Host "Done"
@@ -188,3 +192,5 @@ foreach ($Log in $Logfiles) {
         Remove-Item $Log
         }
     }
+
+New-BurntToastNotification -Text "Installation abgeschlossen", 'Die Installationen der Anwendungen wurden erfolgreich abgeschlossen'

@@ -6,6 +6,9 @@ $cache = "--cacheLocation=C:\Temp\ChocoCache"
 $CurrentUser = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
 $CurrentUserName = $CurrentUser.split("\")[1]
 
+Install-PackageProvider -Name NuGet -Force
+Install-Module -Name BurntToast -Force
+
 Write-Host "Installing Chocolatey"
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 choco install chocolatey-core.extension -y $cache
@@ -24,10 +27,6 @@ Write-Host "Done"
 Write-Host "Installing WinRAR"
 choco install winrar -y $cache
 del "C:\Users\$CurrentUserName\Desktop\PeaZip.lnk"
-Write-Host "Done"
-
-Write-Host "Installing BurntToast"
-choco install burnttoast-psmodule -y $cache
 Write-Host "Done"
 
 Write-Host "Installing gsudo"

@@ -39,7 +39,6 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 * Chocolatey GUI
 * Edge (Chromium)
 * WinRAR
-* BurntToast
 * gsudo
 * Windows Terminal
 * GeForce Experience

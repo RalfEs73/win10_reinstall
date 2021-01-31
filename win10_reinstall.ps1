@@ -168,14 +168,6 @@ Write-Host "Done"
 
 Write-Host "Deinstalliere Bloatware"
 $Bloatware = @(
-        #"Microsoft.3DBuilder"
-        #"Microsoft.Microsoft3DViewer"
-        #"Microsoft.MicrosoftSolitaireCollection"
-        #"Microsoft.NetworkSpeedTest"
-        #"Microsoft.Print3D"
-        #"Microsoft.SkypeApp"
-        #"Microsoft.ZuneMusic"
-        #"Microsoft.ZuneVideo"
         "CandyCrush"
 		)
     

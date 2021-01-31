@@ -80,6 +80,11 @@ choco install anydvd -y $cache
 del "C:\Users\Public\Desktop\AnyDVD.lnk"
 Write-Host "Done"
 
+Write-Host "Installing AnyStream"
+choco install anystream --version=1.0.7.0 -y $cache
+del "C:\Users\Public\Desktop\AnyStream.lnk"
+Write-Host "Done"
+
 Write-Host "Installing File Converter"
 choco install file-converter -y $cache
 Write-Host "Done"

@@ -60,9 +60,11 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 * Epic Games Launcher
 * Steam
 * Uplay (Ubisoft Connect)
+* Amazon Games
 * Streamlabs OBS
 * Spotify
 * Driver Booster
+* Thumbico
 * Movavi Video Editor Plus
 * Film Info! Organiser
 

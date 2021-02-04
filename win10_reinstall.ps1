@@ -129,6 +129,13 @@ choco install uplay -y $cache --ignore-checksums
 Remove-Item "C:\Users\$CurrentUserName\Desktop\Ubisoft Connect.lnk"
 Write-Host "Done"
 
+Write-Host "Installing Amazon Games"
+# Not listed yet
+choco install amazongames --version=1.7.172.1 $cache
+Remove-Item "C:\Users\$CurrentUserName\Desktop\Amazon Games.lnk"
+Stop-Process -Name Amazon*
+Write-Host "Done"
+
 Write-Host "Installing Streamlabs OBS"
 choco install streamlabs-obs -y $cache
 Remove-Item "C:\Users\Public\Desktop\Streamlabs OBS.lnk"
@@ -143,6 +150,11 @@ Write-Host "Installing Driver Booster"
 choco install driverbooster -y $cache --ignore-checksums
 Remove-Item "C:\Users\Public\Desktop\Driver Booster 8.lnk"
 Stop-Process -Name Driver*
+Write-Host "Done"
+
+Write-Host "Installing Thumbico"
+# Not listed yet
+choco install thumbico --version=1.5.0.25 --version=21.1.0
 Write-Host "Done"
 
 Write-Host "Installing Movavi Video Editor Plus"

@@ -174,7 +174,13 @@ Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolate
 Write-Host "Done"
 
 Write-Host "Aktiviere Windows Sandbox"
-choco install windows-sandbox -y $cache
+$test=(Get-WindowsOptionalFeature -Featurename "Containers-DisposableClientVM" -Online)
+if ($test.state -eq 'Enabled') {
+    Write-Host "  ** Sandbox already installed!" -Foreground Magenta
+	return
+	} else {
+	  Enable-WindowsOptionalFeature -Online -FeatureName Containers-DisposableClientVM -NoRestart
+	  }
 Write-Host "Done"
 
 Write-Host "Registry changes"

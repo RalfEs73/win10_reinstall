@@ -56,6 +56,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 * Telegram
 * WhatsApp
 * Discord
+* Gitter
 * Epic Games Launcher
 * Steam
 * Uplay (Ubisoft Connect)

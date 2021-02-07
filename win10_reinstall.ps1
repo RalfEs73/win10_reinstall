@@ -110,6 +110,10 @@ choco install discord.install -y $cache
 Remove-Item "C:\Users\$CurrentUserName\Desktop\Discord.lnk"
 Write-Host "Done"
 
+Write-Host "Installing Gitter"
+choco install gitter -y $cache
+Write-Host "Done"
+
 Write-Host "Installing Epic Games Launcher"
 choco install epicgameslauncher -y $cache
 Remove-Item "C:\Users\Public\Desktop\Epic Games Launcher.lnk"

@@ -66,6 +66,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 * Thumbico
 * Movavi Video Editor Plus
 * Film Info! Organiser
+* Windows Sandbox
 
 ## Die folgenden Anwendungen werden deinstalliert:
 * CandyCrush App

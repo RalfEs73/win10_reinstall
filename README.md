@@ -40,6 +40,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 * Edge (Chromium)
 * WinRAR
 * gsudo
+* ChocoUpdateNotifier
 * Windows Terminal
 * GeForce Experience
 * WinSCP

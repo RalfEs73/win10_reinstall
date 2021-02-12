@@ -33,6 +33,10 @@ Write-Host "Installing gsudo"
 choco install gsudo -y $cache
 Write-Host "Done"
 
+Write-Host "Installing ChocoUpdateNotifier"
+choco install choco install choco-update-notifier -y $cache
+Write-Host "Done"
+
 Write-Host "Installing Windows Termial"
 choco install microsoft-windows-terminal
 New-Item -Path "C:\Users\$CurrentUserName\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState" -ItemType directory -Force | Out-Null

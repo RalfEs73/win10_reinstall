@@ -1,6 +1,4 @@
 # iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/RalfEs73/win10_reinstall/master/win10_reinstall.ps1'))
-Write-Host "Test"
-
 
 New-Item -Path "C:\Temp\ChocoCache" -ItemType directory -Force | Out-Null
 $cache = "--cacheLocation=C:\Temp\ChocoCache"
@@ -230,4 +228,3 @@ foreach ($Log in $Logfiles) {
 
 Remove-Item C:\Temp -Recurse
 
-New-BurntToastNotification -Text "Installation abgeschlossen", 'Die Installationen der Anwendungen wurden erfolgreich abgeschlossen'

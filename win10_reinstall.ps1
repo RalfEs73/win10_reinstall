@@ -218,7 +218,7 @@ $Logfiles = @(
     "C:\ProgramData\chocolatey\logs\choco.summary.log"
     )
 
-# Write-Host "Del Logfiles"
+# Write-Host "Del Logfiles Test"
 foreach ($Log in $Logfiles) {
     If (Test-Path $Log) {
         Write-Host $Log

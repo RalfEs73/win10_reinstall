@@ -14,3 +14,17 @@ choco install chocolatey-core.extension $cache
 choco feature enable --name=allowGlobalConfirmation
 choco feature enable -n=useRememberedArgumentsForUpgrades
 Write-Host "Done"
+
+Write-Host "Aktiviere Windows Sandbox"
+$test=(Get-WindowsOptionalFeature -Featurename "Containers-DisposableClientVM" -Online)
+if (!$test) {
+	Write-Host " ** Unsupported Operating System: Windows 10 Pro or Enterprise 1903 or greater required." -Foreground Magenta
+	return
+	} else {
+	Enable-WindowsOptionalFeature -Online -FeatureName Containers-DisposableClientVM -NoRestart
+	}
+Write-Host "Done"
+
+Write-Host "Registry changes"
+# Verbesserung der Microsoft Qualität in der Games Bar
+New-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\GameDVR' -Name  'EchoCancellationEnabled' -Value '0' -PropertyType 'DWORD' –Force

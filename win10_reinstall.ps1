@@ -227,4 +227,3 @@ foreach ($Log in $Logfiles) {
     }
 Remove-Item C:\Temp -Recurse
 
-New-BurntToastNotification -Text 'Installation abgeschlossen', 'Die Installationen der Anwendungen wurden erfolgreich abgeschlossen'

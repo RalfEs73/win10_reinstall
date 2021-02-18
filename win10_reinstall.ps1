@@ -188,16 +188,6 @@ Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolate
 Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/filminfo/settings/tmdb_config.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\tmdb_config.xml"
 Write-Host "Done"
 
-Write-Host "Aktiviere Windows Sandbox"
-$test=(Get-WindowsOptionalFeature -Featurename "Containers-DisposableClientVM" -Online)
-if (!$test) {
-	Write-Host " ** Unsupported Operating System: Windows 10 Pro or Enterprise 1903 or greater required." -Foreground Magenta
-	return
-	} else {
-	Enable-WindowsOptionalFeature -Online -FeatureName Containers-DisposableClientVM -NoRestart
-	}
-Write-Host "Done"
-
 Write-Host "Registry changes"
 # Verbesserung der Microsoft Qualität in der Games Bar
 New-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\GameDVR' -Name  'EchoCancellationEnabled' -Value '0' -PropertyType 'DWORD' –Force

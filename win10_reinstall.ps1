@@ -157,6 +157,12 @@ Remove-Item "C:\Users\Public\Desktop\Driver Booster 8.lnk"
 Stop-Process -Name Driver*
 Write-Host "Done"
 
+Write-Host "Installing Exodus Wallet"
+# Not listed yet
+choco install exoduswallet --version=21.2.12 -y $cache
+Remove-Item "C:\Users\$CurrentUserName\Desktop\Exodus.lnk"
+Write-Host "Done"
+
 Write-Host "Installing Thumbico"
 # Not listed yet
 choco install thumbico --version=1.5.0.25 -y $cache

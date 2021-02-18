@@ -50,6 +50,8 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 * Thumbico
 * Movavi Video Editor Plus
 * Film Info! Organiser
+
+## Die folgenden Windows Features werden aktiviert:
 * Windows Sandbox
 
 ## Die folgenden Anwendungen werden deinstalliert:

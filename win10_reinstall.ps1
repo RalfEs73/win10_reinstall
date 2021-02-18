@@ -12,30 +12,30 @@ Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force
 
 Write-Host "Installing Chocolatey"
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-choco install chocolatey-core.extension -y $cache
+choco install chocolatey-core.extension $cache
 choco feature enable --name=allowGlobalConfirmation
 choco feature enable -n=useRememberedArgumentsForUpgrades
 Write-Host "Done"
 
 Write-Host "Installing Chocolatey GUI"
-choco install ChocolateyGUI -y $cache
+choco install ChocolateyGUI $cache
 Write-Host "Done"
 
 Write-Host "Installing Edge (Chromium)"
-choco install microsoft-edge -y $cache
+choco install microsoft-edge $cache
 Remove-Item "C:\Users\Public\Desktop\Microsoft Edge.lnk"
 Write-Host "Done"
 
 Write-Host "Installing WinRAR"
-choco install winrar -y $cache
+choco install winrar $cache
 Write-Host "Done"
 
 Write-Host "Installing gsudo"
-choco install gsudo -y $cache
+choco install gsudo $cache
 Write-Host "Done"
 
 Write-Host "Installing ChocoUpdateNotifier"
-choco install choco install choco-update-notifier -y $cache
+choco install choco install choco-update-notifier $cache
 Write-Host "Done"
 
 Write-Host "Installing Windows Termial"
@@ -45,92 +45,92 @@ Start-BitsTransfer -Source "https://github.com/RalfEs73/win10_reinstall/raw/mast
 Write-Host "Done"
 
 Write-Host "Installing GeForce Experience"
-choco install geforce-experience -y $cache
+choco install geforce-experience $cache
 Write-Host "Done"
 
 Write-Host "Installing WinSCP"
-choco install winscp.install -y $cache
+choco install winscp.install $cache
 Remove-Item "C:\Users\Public\Desktop\WinSCP.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Notepad++"
-choco install notepadplusplus.install -y $cache
+choco install notepadplusplus.install $cache
 Write-Host "Done"
 
 Write-Host "Installing 4K Video Downloader"
-choco install 4k-video-downloader -y $cache
+choco install 4k-video-downloader $cache
 Remove-Item "C:\Users\Public\Desktop\4K Video Downloader.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Image Resizer for Windows"
-choco install imageresizerapp -y $cache
+choco install imageresizerapp $cache
 Write-Host "Done"
 
 Write-Host "Installing VLC"
-choco install vlc -y $cache
+choco install vlc $cache
 Remove-Item "C:\Users\Public\Desktop\VLC media player.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Plex"
-choco install plex -y $cache
+choco install plex $cache
 Write-Host "Done"
 
 Write-Host "Installing AnyDVD"
-choco install anydvd -y $cache
+choco install anydvd $cache
 Remove-Item "C:\Users\Public\Desktop\AnyDVD.lnk"
 Write-Host "Done"
 
 Write-Host "Installing AnyStream"
-choco install anystream --version=1.0.7.0 -y $cache
+choco install anystream --version=1.0.7.0 $cache
 Remove-Item "C:\Users\Public\Desktop\AnyStream.lnk"
 Write-Host "Done"
 
 Write-Host "Installing File Converter"
-choco install file-converter -y $cache
+choco install file-converter $cache
 Write-Host "Done"
 
 Write-Host "Installing HandBrake"
-choco install handbrake.install -y $cache
+choco install handbrake.install $cache
 Remove-Item "C:\Users\Public\Desktop\Handbrake.lnk"
 Write-Host "Done"
 
 Write-Host "Installing GitHub Desktop"
-choco install github-desktop -y $cache
+choco install github-desktop $cache
 Remove-Item "C:\Users\$CurrentUserName\Desktop\GitHub Desktop.lnk"
 Stop-Process -Name GitHubDesktop
 Write-Host "Done"
 
 Write-Host "Installing Telegram"
-choco install telegram.install -y $cache
+choco install telegram.install $cache
 Remove-Item "C:\Users\$CurrentUserName\Desktop\Telegram.lnk"
 Write-Host "Done"
 
 Write-Host "Installing WhatsApp"
-choco install WhatsApp -y $cache
+choco install WhatsApp $cache
 Remove-Item "C:\Users\$CurrentUserName\Desktop\WhatsApp.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Discord"
-choco install discord.install -y $cache
+choco install discord.install $cache
 Remove-Item "C:\Users\$CurrentUserName\Desktop\Discord.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Gitter"
-choco install gitter -y $cache
+choco install gitter $cache
 Write-Host "Done"
 
 Write-Host "Installing Epic Games Launcher"
-choco install epicgameslauncher -y $cache
+choco install epicgameslauncher $cache
 Remove-Item "C:\Users\Public\Desktop\Epic Games Launcher.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Steam"
-choco install steam -y $cache
+choco install steam $cache
 Remove-Item "C:\Users\Public\Desktop\Steam.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Uplay"
-choco install uplay -y $cache --ignore-checksums
+choco install uplay $cache --ignore-checksums
 Remove-Item "C:\Users\$CurrentUserName\Desktop\Ubisoft Connect.lnk"
 Write-Host "Done"
 
@@ -142,41 +142,41 @@ Stop-Process -Name Amazon*
 Write-Host "Done"
 
 Write-Host "Installing Streamlabs OBS"
-choco install streamlabs-obs -y $cache
+choco install streamlabs-obs $cache
 Remove-Item "C:\Users\Public\Desktop\Streamlabs OBS.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Spotify"
-choco install spotify -y $cache --ignore-checksums
+choco install spotify $cache --ignore-checksums
 Remove-Item "C:\Users\$CurrentUserName\Desktop\Spotify.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Driver Booster"
-choco install driverbooster -y $cache --ignore-checksums
+choco install driverbooster $cache --ignore-checksums
 Remove-Item "C:\Users\Public\Desktop\Driver Booster 8.lnk"
 Stop-Process -Name Driver*
 Write-Host "Done"
 
 Write-Host "Installing Exodus Wallet"
 # Not listed yet
-choco install exoduswallet --version=21.2.12 -y $cache
+choco install exoduswallet --version=21.2.12 $cache
 Remove-Item "C:\Users\$CurrentUserName\Desktop\Exodus.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Thumbico"
 # Not listed yet
-choco install thumbico --version=1.5.0.25 -y $cache
+choco install thumbico --version=1.5.0.25 $cache
 Write-Host "Done"
 
 Write-Host "Installing Movavi Video Editor Plus"
 # Not listed yet
-choco install movavivideoeditorplus --version=21.1.0 -y $cache
+choco install movavivideoeditorplus --version=21.1.0 $cache
 Remove-Item "C:\Users\$CurrentUserName\Desktop\Movavi Video Editor Plus 2021.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Film Info! Organiser"
 # Not listed yet
-choco install filminfo --version=0.6.1.3 -y $cache
+choco install filminfo --version=0.6.1.3 $cache
 Remove-Item "C:\Users\Public\Desktop\Film Info! Organizer.lnk"
 New-Item -Path "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer" -ItemType directory -Force | Out-Null
 Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/filminfo/settings/Columns.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Columns.xml"

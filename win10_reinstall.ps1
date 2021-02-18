@@ -218,12 +218,14 @@ $Logfiles = @(
     "C:\ProgramData\chocolatey\logs\choco.summary.log"
     )
 
-Write-Host "Del Logfiles"
+# Write-Host "Del Logfiles"
 foreach ($Log in $Logfiles) {
     If (Test-Path $Log) {
         Write-Host $Log
         Remove-Item $Log
         }
     }
+
 Remove-Item C:\Temp -Recurse
 
+New-BurntToastNotification -Text "Installation abgeschlossen", 'Die Installationen der Anwendungen wurden erfolgreich abgeschlossen'

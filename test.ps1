@@ -15,10 +15,6 @@ choco feature enable --name=allowGlobalConfirmation
 choco feature enable -n=useRememberedArgumentsForUpgrades
 Write-Host "Done"
 
-Write-Host "Registry changes"
-# Verbesserung der Microsoft Qualität in der Games Bar
-New-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\GameDVR' -Name  'EchoCancellationEnabled' -Value '0' -PropertyType 'DWORD' –Force
-
 Write-Host "Deinstalliere Bloatware"
 $Bloatware = @(
         "CandyCrush"

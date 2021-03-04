@@ -135,8 +135,7 @@ Remove-Item "C:\Users\$CurrentUserName\Desktop\Ubisoft Connect.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Amazon Games"
-# Not listed yet
-choco install amazongames --version=1.7.172.1 $cache
+choco install amazongames $cache
 Remove-Item "C:\Users\$CurrentUserName\Desktop\Amazon Games.lnk"
 Stop-Process -Name Amazon*
 Write-Host "Done"
@@ -158,34 +157,31 @@ Stop-Process -Name Driver*
 Write-Host "Done"
 
 Write-Host "Installing Exodus Wallet"
-# Not listed yet
-choco install exoduswallet --version=21.2.12 $cache
+choco install exoduswallet $cache
 Remove-Item "C:\Users\$CurrentUserName\Desktop\Exodus.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Thumbico"
-# Not listed yet
-choco install thumbico --version=1.5.0.25 $cache
+choco install thumbico $cache
 Write-Host "Done"
 
 Write-Host "Installing Movavi Video Editor Plus"
-# Not listed yet
-choco install movavivideoeditorplus --version=21.1.0 $cache
+choco install movavivideoeditorplus $cache
 Remove-Item "C:\Users\$CurrentUserName\Desktop\Movavi Video Editor Plus 2021.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Film Info! Organiser"
 # Not listed yet
-choco install filminfo --version=0.6.1.3 $cache
+choco install film-info-organizer --version=0.6.1.3 $cache
 Remove-Item "C:\Users\Public\Desktop\Film Info! Organizer.lnk"
 New-Item -Path "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer" -ItemType directory -Force | Out-Null
-Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/filminfo/settings/Columns.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Columns.xml"
-Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/filminfo/settings/Config.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Config.xml"
-Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/filminfo/settings/Favoriten.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Favoriten.xml"
-Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/filminfo/settings/Filter.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Filter.xml"
-Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/filminfo/settings/Genre.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Genre.xml"
-Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/filminfo/settings/Interface.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Interface.xml"
-Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/filminfo/settings/tmdb_config.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\tmdb_config.xml"
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/film-info-organizer/settings/Columns.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Columns.xml"
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/film-info-organizer/settings/Config.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Config.xml"
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/film-info-organizer/settings/Favoriten.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Favoriten.xml"
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/film-info-organizer/settings/Filter.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Filter.xml"
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/film-info-organizer/settings/Genre.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Genre.xml"
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/film-info-organizer/settings/Interface.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Interface.xml"
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/film-info-organizer/settings/tmdb_config.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\tmdb_config.xml"
 Write-Host "Done"
 
 Write-Host "Deinstalliere Bloatware"

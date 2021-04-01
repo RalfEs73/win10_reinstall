@@ -23,6 +23,7 @@ Write-Host "Done"
 
 Write-Host "Installing Edge (Chromium)"
 choco install microsoft-edge $cache
+choco pin add -n=microsoft-edge
 Remove-Item "C:\Users\Public\Desktop\Microsoft Edge.lnk"
 Write-Host "Done"
 
@@ -96,6 +97,7 @@ Write-Host "Done"
 
 Write-Host "Installing GitHub Desktop"
 choco install github-desktop $cache
+choco pin add -n=github-desktop
 Remove-Item "C:\Users\$CurrentUserName\Desktop\GitHub Desktop.lnk"
 Stop-Process -Name GitHubDesktop
 Write-Host "Done"
@@ -113,6 +115,7 @@ Write-Host "Done"
 Write-Host "Installing Discord"
 choco install discord.install $cache
 Remove-Item "C:\Users\$CurrentUserName\Desktop\Discord.lnk"
+choco pin add -n=discord.install
 Write-Host "Done"
 
 Write-Host "Installing Gitter"
@@ -126,6 +129,7 @@ Write-Host "Done"
 
 Write-Host "Installing Steam"
 choco install steam $cache
+choco pin add -n=steam
 Remove-Item "C:\Users\Public\Desktop\Steam.lnk"
 Write-Host "Done"
 
@@ -158,6 +162,7 @@ Write-Host "Done"
 
 Write-Host "Installing Exodus Wallet"
 choco install exoduswallet $cache
+choco pin add -n=exoduswallet
 Remove-Item "C:\Users\$CurrentUserName\Desktop\Exodus.lnk"
 Write-Host "Done"
 

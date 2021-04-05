@@ -1,7 +1,5 @@
 # iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/RalfEs73/win10_reinstall/master/win10_reinstall.ps1'))
 
-New-Item -Path "C:\Temp\ChocoCache" -ItemType directory -Force | Out-Null
-
 $CurrentUser = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
 $CurrentUserName = $CurrentUser.split("\")[1]
 
@@ -192,17 +190,6 @@ Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolate
 Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/film-info-organizer/settings/tmdb_config.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\tmdb_config.xml"
 Write-Host "Done"
 
-Write-Host "Deinstalliere Bloatware"
-$Bloatware = @(
-        "CandyCrush"
-		)
-    
-foreach ($Bloat in $Bloatware) {
-        Get-AppxPackage -Name $Bloat| Remove-AppxPackage
-        Get-AppxProvisionedPackage -Online | Where-Object DisplayName -like $Bloat | Remove-AppxProvisionedPackage -Online
-        Write-Host "Deinstalliere: $Bloat."
-    }
-
 $Logfiles = @(
     "C:\ProgramData\chocolatey\logs\chocolatey.log"
     "C:\ProgramData\chocolatey\logs\choco.summary.log"
@@ -215,7 +202,5 @@ foreach ($Log in $Logfiles) {
         Remove-Item $Log
         }
     }
-
-Remove-Item C:\Temp -Recurse
 
 New-BurntToastNotification -Text "Installation abgeschlossen", 'Die Installationen der Anwendungen wurden erfolgreich abgeschlossen'

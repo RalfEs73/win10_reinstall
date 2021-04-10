@@ -177,8 +177,7 @@ Remove-Item "C:\Users\$CurrentUserName\Desktop\Movavi Video Editor Plus 2021.lnk
 Write-Host "Done"
 
 Write-Host "Installing Film Info! Organiser"
-# Not listed yet
-choco install film-info-organizer --version=0.6.1.3
+choco install film-info-organizer
 Remove-Item "C:\Users\Public\Desktop\Film Info! Organizer.lnk"
 New-Item -Path "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer" -ItemType directory -Force | Out-Null
 Start-BitsTransfer -Source "https://raw.githubusercontent.com/RalfEs73/chocolatey-packages/master/film-info-organizer/settings/Columns.xml" -Destination "C:\Users\$CurrentUserName\AppData\Roaming\film info! organizer\Columns.xml"

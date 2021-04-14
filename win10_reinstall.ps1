@@ -157,7 +157,7 @@ Write-Host "Done"
 
 Write-Host "Installing Driver Booster"
 choco install driverbooster --ignore-checksums
-Remove-Item "C:\Users\Public\Desktop\Driver Booster 8.lnk"
+Remove-Item "C:\Users\Public\Desktop\Driver Booster*.lnk"
 Stop-Process -Name Driver*
 Write-Host "Done"
 
@@ -165,6 +165,11 @@ Write-Host "Installing Exodus Wallet"
 choco install exoduswallet
 choco pin add -n=exoduswallet
 Remove-Item "C:\Users\$CurrentUserName\Desktop\Exodus.lnk"
+Write-Host "Done"
+
+Write-Host "Installing Ledger Live Wallet"
+choco install ledger-live
+Remove-Item "C:\Users\Public\Desktop\Ledger Live.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Thumbico"

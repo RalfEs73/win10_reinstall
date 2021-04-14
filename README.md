@@ -48,6 +48,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 * Spotify
 * Driver Booster
 * Exodus Wallet
+* Ledger Live Wallet
 * Thumbico
 * Movavi Video Editor Plus
 * Film Info! Organiser

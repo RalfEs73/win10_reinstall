@@ -106,13 +106,13 @@ Write-Host "Done"
 
 Write-Host "Installing WhatsApp"
 choco install WhatsApp
+choco pin add -n=WhatsApp
 Remove-Item "C:\Users\$CurrentUserName\Desktop\WhatsApp.lnk"
 Write-Host "Done"
 
 Write-Host "Installing Discord"
 choco install discord.install
 Remove-Item "C:\Users\$CurrentUserName\Desktop\Discord.lnk"
-choco pin add -n=discord.install
 Write-Host "Done"
 
 Write-Host "Installing Gitter"

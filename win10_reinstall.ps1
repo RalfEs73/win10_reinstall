@@ -79,7 +79,7 @@ Remove-Item "C:\Users\Public\Desktop\AnyDVD.lnk"
 Write-Host "Done"
 
 Write-Host "Installing AnyStream"
-choco install anystream --version=1.0.7.0
+choco install anystream
 Remove-Item "C:\Users\Public\Desktop\AnyStream.lnk"
 Write-Host "Done"
 
